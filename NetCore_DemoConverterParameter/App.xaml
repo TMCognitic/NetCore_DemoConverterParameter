@@ -1,0 +1,12 @@
+﻿<Application x:Class="NetCore_DemoConverterParameter.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:NetCore_DemoConverterParameter"
+             xmlns:vm="clr-namespace:NetCore_DemoConverterParameter.ViewModels"
+             xmlns:conv="clr-namespace:NetCore_DemoConverterParameter.Converters"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <vm:MainViewModels x:Key="Main" />
+        <conv:BooleanToGenderConverter x:Key="BooleanToGender" />
+    </Application.Resources>
+</Application>
